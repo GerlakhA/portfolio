@@ -1,5 +1,10 @@
 import { About, Content, Experience, Projects } from '@/shared/ui'
 
+export async function generateStaticParams() {
+	// Возвращаем пустые параметры, если маршрут статический
+	return []
+}
+
 export default function Home() {
 	return (
 		<div className='w-full h-full'>
