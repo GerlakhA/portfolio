@@ -9,22 +9,18 @@ export const PROJECTS: IProject[] = [
 			{
 				id: 1,
 				name: 'Next.js'
-				// icon: RiNextjsFill
 			},
 			{
 				id: 2,
 				name: 'Nest.js'
-				// icon: SiNestjs
 			},
 			{
 				id: 3,
 				name: 'Tailwind CSS'
-				// icon: RiTailwindCssFill
 			},
 			{
 				id: 4,
 				name: 'Tanstack React Query'
-				// icon: SiReactquery
 			}
 		],
 		link: 'https://github.com/GerlakhA/Full-stack-planner',
@@ -39,22 +35,18 @@ export const PROJECTS: IProject[] = [
 			{
 				id: 1,
 				name: 'Next.js'
-				// icon: RiNextjsFill
 			},
 			{
 				id: 2,
 				name: 'Tailwind CSS'
-				// icon: RiTailwindCssFill
 			},
 			{
 				id: 3,
 				name: 'Shadcn UI'
-				// icon: SiShadcnui
 			},
 			{
 				id: 4,
 				name: 'Tanstack React Query'
-				// icon: SiReactquery
 			}
 		],
 		link: 'https://github.com/GerlakhA/taskify',
@@ -69,22 +61,18 @@ export const PROJECTS: IProject[] = [
 			{
 				id: 1,
 				name: 'Next.js'
-				// icon: RiNextjsFill
 			},
 			{
 				id: 2,
 				name: 'Tailwind CSS'
-				// icon: RiTailwindCssFill
 			},
 			{
 				id: 3,
 				name: 'Tanstack React Query'
-				// icon: SiReactquery
 			},
 			{
 				id: 4,
 				name: 'Zustand'
-				// icon: TbBrandRedux
 			}
 		],
 		link: 'https://github.com/GerlakhA/spotify-clone',

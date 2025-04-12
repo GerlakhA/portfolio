@@ -95,7 +95,6 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 					/>
 				</Link>
 			</div>
-			{/* <Skills skills={project.skills} /> */}
 		</motion.div>
 	)
 }
