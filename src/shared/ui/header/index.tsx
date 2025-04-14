@@ -23,7 +23,7 @@ export const Header = () => {
 	const Icon = themeMode === 'dark' ? <Moon /> : <Sun />
 
 	return (
-		<header className='sticky top-0 p-10 border-b-1 border-b-neutral-400 flex items-center gap-10 z-10 shadow-md dark:shadow-white bg-white dark:bg-black'>
+		<header className='sticky top-0 p-10 border-b-1 border-b-neutral-400 flex items-center gap-10 z-10 shadow-md dark:border-white bg-white dark:bg-black'>
 			<Link href={'/'}>
 				<Image
 					src={'/me.jpeg'}
@@ -40,7 +40,7 @@ export const Header = () => {
 						key={route.id}
 						className={cn(
 							'h-8',
-							getLinkId === route.id && 'border-b-3 dark:border-b-blue-500'
+							getLinkId === route.id && 'border-b-3 border-black dark:border-b-blue-500'
 						)}
 					>
 						<span className='font-bold text-xl'>{t(route.name.toLowerCase())}</span>
@@ -61,7 +61,7 @@ export const Header = () => {
 
 				<button
 					onClick={toggleTheme}
-					className='bg-transparent w-12 h-12 border-2 rounded-full cursor-pointer flex justify-center items-center'
+					className='bg-transparent shadow-sm dark:shadow-white w-12 h-12 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-all rounded-full cursor-pointer flex justify-center items-center'
 				>
 					{Icon}
 				</button>

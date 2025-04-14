@@ -1,9 +1,9 @@
 import * as motion from 'motion/react-client'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import Image from 'next/image'
 
-export const About = () => {
-	const t = useTranslations('AboutPage')
+export const About = async () => {
+	const t = await getTranslations('AboutPage')
 
 	return (
 		<div className='flex justify-between items-center'>
@@ -19,7 +19,7 @@ export const About = () => {
 				src={'/me.jpeg'}
 				width={600}
 				height={720}
-				className='rounded-full shadow-2xl shadow-black dark:shadow-white'
+				className='rounded-full shadow-lg shadow-black dark:shadow-white'
 				alt='me'
 			/>
 		</div>

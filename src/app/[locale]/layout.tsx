@@ -1,7 +1,8 @@
-import { Header } from '@/shared/ui'
+import { CursorShadow, Header } from '@/shared/ui'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { Toaster } from 'sonner'
 import './globals.css'
 
 const geistSans = Geist({
@@ -28,7 +29,9 @@ export default function RootLayout({
 		<html lang='en' className='bg-white dark:bg-[#0a0a0a]'>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<NextIntlClientProvider>
-					<main className='w-full min-h-screen bg-white text-[#0a0a0a] dark:bg-black dark:text-[#f3f3f3]'>
+					<main>
+						<Toaster />
+						<CursorShadow />
 						<Header />
 						{children}
 					</main>

@@ -16,7 +16,12 @@
 		"contact": "Contact"
 	},
 	"Project": {
-		"skills": "skills"
+		"skills": "skills",
+		"description": {
+			"1": "A planning application with functionality: statistics, a timer, creating tasks in two types (kanban or sheet), as well as a time block where you can plan your day and find out how much time is left for sleep.  The server is written in Nest js.",
+			"2": "Task manager with functionality: copying, deleting, editing and drag and drop. The neural network generates a background tailored to your workspace with tasks.",
+			"3": "A site for listening to music with the ability to log in, you can listen to songs and add your own. It is possible to search songs by title. Added the ability to create playlists"
+		}
 	},
 	"Experience": {
 		"start": "Start of learning april 2023 - present",
@@ -24,5 +29,12 @@
 		"descriptionFirst": "After studying at college, I decided to try myself in the IT field and got into school 21 from Sberbank",
 		"descriptionSecond": "while studying at school 21 I realized that I like frontend and started to develop myself in this direction",
 		"descriptionThird": "Technology stack: React, Typescript, Redux, React-hook-form, Mui, FSD, Scss.\nMethodology: Agile. Sprint duration is 2–3 weeks.\nI independently completed the following tasks:\n-Redesigned two sections,\n-Optimized filters in all project sections using technologies such as MUI, React-hook-form, Redux, and Local Storage,\n-Wrote new functionality for modal windows and dropdown lists,\n-Assisted other developers with task implementation,\n-Created new components considering semantics, FSD architecture, and code optimization,\n-Maintained implemented functionality and fixed bugs,\n-Optimized and improved code readability (reduced lines of code by half without losing functionality),\n-Renamed folders, added a linter to the project,\n-Investigated the project for bugs, documented bug reports in Jira,\n-Analyzed the project and proposed optimizations: virtualization of large lists, request caching, elimination of unnecessary array iterations, reduction of redraws,\n-Conducted code reviews both within my team and across adjacent teams (within the cluster),\n-Actively participated in negotiations with backend developers, testers, and analysts,\n-Actively engaged in planning, daily meetings, grooming tasks, and retrospectives to improve internal team processes.\n\nAchievements:\n-Optimized the application's user interface for more convenient interaction,\n-Eliminated coding errors,\n-Increased application efficiency: implemented request caching, eliminated unnecessary array iterations, suggested and implemented list virtualization,\n-Developed new functionalities for the application,\n-Completed tasks on time."
+	},
+	"Contact": {
+		"name": "Name",
+		"email": "Email",
+		"message": "Message",
+		"description": "Your message must be between 10 and 500 characters.",
+		"send": "Send message"
 	}
 }

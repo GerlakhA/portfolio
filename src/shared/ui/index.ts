@@ -1,5 +1,7 @@
 export { About } from '@/shared/ui/about'
+export { Contact } from '@/shared/ui/contact'
 export { Content } from '@/shared/ui/content'
+export { CursorShadow } from '@/shared/ui/cursor-shadow'
 export { Experience } from '@/shared/ui/experience'
 export { Header } from '@/shared/ui/header'
 export { Projects } from '@/shared/ui/projects'
