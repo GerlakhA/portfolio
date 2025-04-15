@@ -38,8 +38,8 @@ export const CursorShadow = () => {
 		<motion.div
 			className='fixed top-0 left-0 pointer-events-none z-50'
 			animate={{
-				x: position.x - 240, // Half of the 160px (w-40) width
-				y: position.y - 240 // Half of the 160px (w-40) height
+				x: position.x - 240,
+				y: position.y - 240
 			}}
 			transition={{
 				type: 'spring',

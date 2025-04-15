@@ -7,7 +7,8 @@
 	},
 	"AboutPage": {
 		"about": "About",
-		"presentation": "Hello 👋 my name is Andrey i'm frontend developer from Russia and now I will tell you a little about myself and my work experience."
+		"presentation": "Hello 👋 my name is Andrey i'm frontend developer from Russia and now I will tell you a little about myself and my work experience.",
+		"skills": "My skills: "
 	},
 	"Navbar": {
 		"about": "About",

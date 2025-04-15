@@ -35,7 +35,7 @@ export const Content = ({ linkId, title, children, id }: IContent) => {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className='p-40'
+			className='p-25 w-full'
 		>
 			<motion.h1
 				initial={{ opacity: 0, y: -50 }}
