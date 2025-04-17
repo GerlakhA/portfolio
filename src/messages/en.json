@@ -8,7 +8,12 @@
 	"AboutPage": {
 		"about": "About",
 		"presentation": "Hello 👋 my name is Andrey i'm frontend developer from Russia and now I will tell you a little about myself and my work experience.",
-		"skills": "My skills: "
+		"skills": "My skills: ",
+		"name": "Andrey",
+		"from": "Russia, Moscow",
+		"cardDescription": "Frontend developer passionate about creating beautiful and functional web experiences.",
+		"years": "21 years old",
+		"cardContact": "Contact"
 	},
 	"Navbar": {
 		"about": "About",
@@ -36,6 +41,8 @@
 		"email": "Email",
 		"message": "Message",
 		"description": "Your message must be between 10 and 500 characters.",
-		"send": "Send message"
+		"send": "Send message",
+		"placeholderName": "Your name",
+		"placeholderMessage": "Your message"
 	}
 }

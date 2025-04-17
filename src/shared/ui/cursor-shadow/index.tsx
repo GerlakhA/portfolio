@@ -1,5 +1,6 @@
 'use client'
 
+import { useTheme } from '@/shared/store/theme'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
@@ -10,15 +11,14 @@ type Position = {
 
 export const CursorShadow = () => {
 	const [position, setPosition] = useState<Position>({ x: 0, y: 0 })
-	const themeMode = localStorage.getItem('themeMode')
+	const { theme } = useTheme()
 
-	const isDarkTheme = themeMode === 'dark'
+	const isDarkTheme = theme === 'dark'
 
 	useEffect(() => {
 		let animationFrameId: number
 
 		const updatePosition = (e: MouseEvent) => {
-			// Use requestAnimationFrame for smoother performance
 			animationFrameId = requestAnimationFrame(() => {
 				setPosition({ x: e.clientX, y: e.clientY })
 			})

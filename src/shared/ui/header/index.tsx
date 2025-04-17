@@ -22,7 +22,7 @@ export const Header = () => {
 	const Icon = themeMode === 'dark' ? <Moon /> : <Sun />
 
 	return (
-		<header className='sticky top-0 p-10 border-b-1 border-b-neutral-400 flex items-center gap-10 z-10 shadow-md dark:border-white bg-white dark:bg-black'>
+		<header className='sticky top-0 p-10 border-b-1 border-b-neutral-400 flex items-center gap-10 z-10 shadow-md bg-white dark:border-b-slate-400/50 dark:bg-black'>
 			<Link href={'/'}>
 				<Image
 					src={'/me.jpeg'}

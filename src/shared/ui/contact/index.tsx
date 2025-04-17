@@ -76,7 +76,7 @@ export const Contact = () => {
 									<FormItem>
 										<FormLabel>{t('name')}</FormLabel>
 										<FormControl>
-											<Input placeholder='Your name' {...field} />
+											<Input placeholder={t('placeholderName')} {...field} />
 										</FormControl>
 										<FormMessage />
 									</FormItem>
@@ -105,7 +105,7 @@ export const Contact = () => {
 										<FormLabel>{t('message')}</FormLabel>
 										<FormControl>
 											<Textarea
-												placeholder='Your message'
+												placeholder={t('placeholderMessage')}
 												className='min-h-[150px]'
 												{...field}
 											/>

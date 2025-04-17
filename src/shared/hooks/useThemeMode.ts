@@ -1,8 +1,10 @@
 import { ThemeMode } from '@/config/types'
 import { useEffect, useState } from 'react'
+import { useTheme } from '../store/theme'
 
 export const useThemeMode = () => {
 	const [themeMode, setThemeMode] = useState<ThemeMode>('dark')
+	const { setTheme } = useTheme()
 
 	useEffect(() => {
 		const localTheme = localStorage.getItem('themeMode')
@@ -19,6 +21,7 @@ export const useThemeMode = () => {
 	const toggleTheme = () => {
 		const newTheme = themeMode === 'light' ? 'dark' : 'light'
 		setThemeMode(newTheme)
+		setTheme(newTheme)
 		localStorage.setItem('themeMode', newTheme)
 	}
 

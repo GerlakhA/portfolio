@@ -133,3 +133,16 @@ export const skills = [
 		altText: 'Linux'
 	}
 ]
+
+export const tags = [
+	'React',
+	'Next.js',
+	'TypeScript',
+	'Tailwind CSS',
+	'Redux',
+	'Zustand',
+	'React Query',
+	'Nest js',
+	'React-hook-form',
+	'Zod'
+]

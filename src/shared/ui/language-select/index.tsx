@@ -25,7 +25,7 @@ export const LanguageSelect = () => {
 		<div className='flex items-center'>
 			<Globe className='h-7 w-7 mr-2 dark:text-zinc-400' />
 			<Select defaultValue={locale} onValueChange={value => router.push(value)}>
-				<SelectTrigger className='w-[140px] bg-zinc-900 border-zinc-800 focus:ring-zinc-700'>
+				<SelectTrigger className='w-[140px] dark:bg-zinc-900 border-zinc-800 focus:ring-zinc-700'>
 					<SelectValue placeholder='Select language' />
 				</SelectTrigger>
 				<SelectContent className='bg-zinc-900 border-zinc-800'>
