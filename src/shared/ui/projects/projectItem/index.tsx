@@ -7,7 +7,6 @@ import * as motion from 'motion/react-client'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import { child, container } from '../config/config'
 
 interface IProjectItem {
 	project: IProject
@@ -23,7 +22,7 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 			initial={{ opacity: 0, y: 50 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.6 }}
-			className={cn('w-[50%] flex justify-end', isEven && 'justify-end')}
+			className={cn('w-[40%] flex')}
 		>
 			<div className='group relative overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-all duration-300 hover:shadow-xl dark:shadow-primary/5 hover:dark:shadow-primary/10'>
 				<div className='absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/10 blur-3xl filter group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10' />
@@ -42,7 +41,7 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 					</Link>
 				</div>
 
-				<div className='flex flex-col gap-4 p-6 bg-gradient-to-r from-white to-indigo-100 dark:from-black dark:to-emerald-800'>
+				<div className='flex flex-col h-full gap-4 p-6 bg-gradient-to-r from-white to-indigo-100 dark:from-black dark:to-emerald-800'>
 					<div className='space-y-2'>
 						<motion.h2
 							className='text-2xl font-bold tracking-tight text-card-foreground'
@@ -53,34 +52,9 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 							{project.name}
 						</motion.h2>
 
-						<motion.div
-							className='text-sm text-muted-foreground'
-							variants={container}
-							initial='hidden'
-							whileInView='visible'
-						>
-							{characters.map((character, index) => (
-								<motion.span
-									key={index}
-									variants={child}
-									className='inline-block'
-									style={{
-										whiteSpace: 'pre'
-									}}
-									transition={{
-										color: {
-											duration: 2,
-											ease: 'easeInOut',
-											repeat: Number.POSITIVE_INFINITY,
-											repeatType: 'loop'
-										},
-										delay: index * 0.03
-									}}
-								>
-									{character === ' ' ? '\u00A0' : character}
-								</motion.span>
-							))}
-						</motion.div>
+						<motion.p className='text-neutral-600 dark:text-neutral-400'>
+							{t(`description.${project.id}`)}
+						</motion.p>
 					</div>
 
 					<div className='mt-2'>
@@ -98,30 +72,6 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 								</Badge>
 							))}
 						</div>
-					</div>
-
-					<div className='mt-auto pt-4'>
-						<Link
-							href={project.link}
-							target='_blank'
-							className='inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors'
-						>
-							View Project
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								className='ml-1 h-4 w-4'
-								fill='none'
-								viewBox='0 0 24 24'
-								stroke='currentColor'
-							>
-								<path
-									strokeLinecap='round'
-									strokeLinejoin='round'
-									strokeWidth={2}
-									d='M14 5l7 7m0 0l-7 7m7-7H3'
-								/>
-							</svg>
-						</Link>
 					</div>
 				</div>
 			</div>

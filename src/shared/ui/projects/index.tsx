@@ -10,7 +10,7 @@ export const Projects = () => {
 			transition={{ duration: 1.5 }}
 			className='flex flex-col gap-10 mt-10'
 		>
-			<motion.div className='w-full flex flex-col gap-20'>
+			<motion.div className='w-full flex flex-wrap gap-20 ml-25'>
 				{PROJECTS.map(project => (
 					<ProjectItem key={project.id} project={project} />
 				))}

@@ -39,7 +39,7 @@ export const Header = () => {
 						key={route.id}
 						className={cn(
 							'h-8',
-							getLinkId === route.id && 'border-b-3 border-black dark:border-b-blue-500'
+							getLinkId === route.id && 'border-b-3 border-black dark:border-blue-500'
 						)}
 					>
 						<span className='font-bold text-xl'>{t(route.name.toLowerCase())}</span>

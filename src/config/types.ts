@@ -9,7 +9,6 @@ export interface IProject {
 	skills: ISkills[]
 	link: string
 	imgUrl: string
-	description: string
 }
 
 export type ThemeMode = 'dark' | 'light'

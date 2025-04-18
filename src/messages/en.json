@@ -24,9 +24,10 @@
 	"Project": {
 		"skills": "skills",
 		"description": {
-			"1": "A planning application with functionality: statistics, a timer, creating tasks in two types (kanban or sheet), as well as a time block where you can plan your day and find out how much time is left for sleep.  The server is written in Nest js.",
-			"2": "Task manager with functionality: copying, deleting, editing and drag and drop. The neural network generates a background tailored to your workspace with tasks.",
-			"3": "A site for listening to music with the ability to log in, you can listen to songs and add your own. It is possible to search songs by title. Added the ability to create playlists"
+			"1": "Dodo pizza clone site with the ability to buy pizza, sort pizza, added a lot of pizza filters, made an order page with a map and authorization.",
+			"2": "A planning application with functionality: statistics, a timer, creating tasks in two types (kanban or sheet), as well as a time block where you can plan your day and find out how much time is left for sleep.  The server is written in Nest js.",
+			"3": "Task manager with functionality: copying, deleting, editing and drag and drop. The neural network generates a background tailored to your workspace with tasks.",
+			"4": "A site for listening to music with the ability to log in, you can listen to songs and add your own. It is possible to search songs by title. Added the ability to create playlists"
 		}
 	},
 	"Experience": {
