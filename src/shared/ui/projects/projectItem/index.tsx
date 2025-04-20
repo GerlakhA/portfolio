@@ -14,8 +14,6 @@ interface IProjectItem {
 
 export const ProjectItem = ({ project }: IProjectItem) => {
 	const t = useTranslations('Project')
-	const characters = t(`description.${project.id}`).split('')
-	const isEven = project.id % 2 === 0
 
 	return (
 		<motion.div
@@ -24,21 +22,23 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 			transition={{ duration: 0.6 }}
 			className={cn('w-[40%] flex')}
 		>
-			<div className='group relative overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-all duration-300 hover:shadow-xl dark:shadow-primary/5 hover:dark:shadow-primary/10'>
+			<Link
+				href={project.link}
+				target='_blank'
+				className='group relative overflow-hidden rounded-xl bg-card text-card-foreground shadow-lg transition-all duration-300 hover:shadow-xl dark:shadow-primary/5 hover:dark:shadow-primary/10'
+			>
 				<div className='absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/10 blur-3xl filter group-hover:bg-primary/20 dark:bg-primary/5 dark:group-hover:bg-primary/10' />
 
 				<div className='relative overflow-hidden'>
-					<Link href={project.link} target='_blank'>
-						<div className='relative h-48 w-full overflow-hidden sm:h-64'>
-							<Image
-								src={project.imgUrl}
-								fill
-								alt={project.name}
-								className='object-cover transition-transform duration-500 group-hover:scale-105'
-							/>
-							<div className='absolute inset-0 bg-gradient-to-t from-card/80 to-transparent' />
-						</div>
-					</Link>
+					<div className='relative h-48 w-full overflow-hidden sm:h-64'>
+						<Image
+							src={project.imgUrl}
+							fill
+							alt={project.name}
+							className='object-cover transition-transform duration-500 group-hover:scale-105'
+						/>
+						<div className='absolute inset-0 bg-gradient-to-t from-card/80 to-transparent' />
+					</div>
 				</div>
 
 				<div className='flex flex-col h-full gap-4 p-6 bg-gradient-to-r from-white to-indigo-100 dark:from-black dark:to-emerald-800'>
@@ -74,7 +74,7 @@ export const ProjectItem = ({ project }: IProjectItem) => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Link>
 		</motion.div>
 	)
 }

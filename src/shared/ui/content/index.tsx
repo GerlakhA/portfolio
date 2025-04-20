@@ -19,7 +19,7 @@ export const Content = ({ linkId, title, children, id }: IContent) => {
 
 	const intersectionRef = useRef<any>(null)
 	const intersection = useIntersection(intersectionRef, {
-		threshold: 0.8
+		threshold: 0.7
 	})
 
 	useEffect(() => {
